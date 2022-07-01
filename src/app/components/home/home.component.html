@@ -1,0 +1,6 @@
+<div class="container">
+  <h1>Short your link!</h1>
+  <input type="text" placeholder="your link" [(ngModel)]="oldlink" />
+  <button type="submit" class="submit" (click)="shortlink()">Confirm</button>
+  <span *ngIf="shortedlink">Your Shorted Link :  http://localhost:4200/{{shortedlink.shorted_link}}</span>
+</div>

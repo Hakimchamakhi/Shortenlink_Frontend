@@ -1,0 +1,24 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Link</th>
+      <th scope="col">email</th>
+      <th scope="col">IP</th>
+      <th scope="col">Agent</th>
+      <th scope="col">Pays</th>
+      <th scope="col">Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of logsdata">
+      <th scope="row">{{item.link}}</th>
+      <td>{{item.user_email}}</td>
+      <td>{{item.ip}}</td>
+      <td>{{item.agent}}</td>
+      <td>{{item.pays}}</td>
+      <td>{{item.time}}</td>
+
+    </tr>
+
+  </tbody>
+</table>
